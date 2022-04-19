@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "isamples_cesium"
+version = "0.1.0"
+description = "Tools for generating Cesium point clouds"
+authors = ["datadavev <605409+datadavev@users.noreply.github.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+click = "^8.0.4"
+GDAL = "^3.4.2"
+PDAL = "^3.0.2"
+requests = "^2.27.1"
+python-geohash = "^0.8.5"
+sqlmodel = "^0.0.6"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

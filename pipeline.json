@@ -1,0 +1,23 @@
+{
+    "pipeline": [
+        {
+            "type": "readers.text",
+            "filename":"samples.csv",
+            "default_srs": "EPSG:4326",
+            "header": "X Y Z Classification Intensity Red Green Blue",
+            "skip":1,
+            "separator":" "
+        },
+    
+        {
+            "type":"writers.las",
+            "filename":"samples.las",
+            "scale_x": "0.0001",
+            "scale_y": "0.0001",
+            "scale_z": "1",
+            "offset_x": "auto",
+            "offset_y": "auto",
+            "offset_z": "auto"
+        }
+    ]
+}
